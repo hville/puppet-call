@@ -1,0 +1,33 @@
+{
+  "name": "puppet-call",
+  "version": "0.0.1",
+  "description": "run a function in puppeteer with active server, browser and page",
+  "keywords": [
+    "puppeteer",
+    "browser",
+    "chromium",
+    "test"
+  ],
+  "author": "Hugo Villeneuve",
+  "main": "./index.js",
+  "module": "./module.js",
+  "browser": "./browser.js",
+  "peerdependencies": {
+    "puppeteer": "^0.13.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chrome": "0.0.54",
+    "@types/node": "^8.0.53",
+    "cotest": "^3.0.0"
+  },
+  "scripts": {
+    "test": "cotest ./tst",
+    "prepublishOnly": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hville/puppet-call"
+  },
+  "license": "MIT"
+}
