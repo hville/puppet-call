@@ -9,9 +9,7 @@
     "test"
   ],
   "author": "Hugo Villeneuve",
-  "main": "./index.js",
-  "module": "./module.js",
-  "browser": "./browser.js",
+  "main": "./call.js",
   "peerdependencies": {
     "puppeteer": "^0.13.0"
   },
