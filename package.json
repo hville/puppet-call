@@ -1,7 +1,7 @@
 {
   "name": "puppet-call",
-  "version": "0.0.1",
-  "description": "run a function in puppeteer with active server, browser and page",
+  "version": "0.1.0",
+  "description": "puppeteer utils for testing: bundler, server, browser, page",
   "keywords": [
     "puppeteer",
     "browser",
@@ -9,14 +9,18 @@
     "test"
   ],
   "author": "Hugo Villeneuve",
-  "main": "./call.js",
   "peerdependencies": {
     "puppeteer": "^0.13.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rollup": "^0.52.1",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
   "devDependencies": {
     "@types/chrome": "0.0.54",
-    "@types/node": "^8.0.53",
+    "@types/node": "^8.0.55",
+    "@types/rollup": "^0.51.1",
     "cotest": "^3.0.0"
   },
   "scripts": {
