@@ -9,6 +9,7 @@ const puppeteer = require('puppeteer'),
 module.exports = function(options = {}, puppetAction) {
 	return puppeteer.launch(options).then( browser => {
 		const headless = options.headless !== false && !options.devtools !== false,
+					//@ts-ignore
 					closed = new Promise( done => browser.on( 'disconnected', done ) )
 
 		function unwind() {

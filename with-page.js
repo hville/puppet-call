@@ -10,7 +10,7 @@ const withPuppet = require('./with-puppet')
 module.exports = function pager(origin, pageAction, config) {
 	return withPuppet(config, puppet => {
 		return puppet.newPage().then(page => {
-			page.on('console', msg => console.log(msg.text))
+			page.on('console', msg => console.log(msg.text)) //eslint-disable-line no-console
 			return origin
 				? page.goto(origin).then(() => page.evaluate(pageAction))
 				: page.evaluate(pageAction)
