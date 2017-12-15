@@ -1,4 +1,4 @@
-const withServer = require('../with-server'),
+const withServer = require('@hugov/test-server'),
 			withPage = require('../with-page'),
 			ct = require('cotest')
 

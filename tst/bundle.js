@@ -1,7 +1,7 @@
-const withServer = require('../with-server'),
+const withServer = require('@hugov/test-server'),
 			withPage = require('../with-page'),
 			ct = require('cotest'),
-			bundle = require('../bundle')
+			bundle = require('@hugov/cjs-to-iife')
 
 ct.timeout(10000)
 

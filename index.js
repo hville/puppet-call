@@ -1,6 +1,6 @@
 // @ts-check
-const bundle = require('./bundle'),
-			withServer = require('./with-server'),
+const bundle = require('@hugov/cjs-to-iife'),
+			withServer = require('@hugov/test-server'),
 			withPuppet = require('./with-puppet'),
 			withPage = require('./with-page')
 

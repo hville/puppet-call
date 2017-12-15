@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer'),
-			wrap = require('./src/wrap')
+			wrap = require('@hugov/promise-wrap')
 
 /**
  * @param {Object} options
